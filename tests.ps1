@@ -93,7 +93,6 @@ Test-Result "Large folder creates archive with three files" {
     }
 
     $files = @($contents | Where-Object { $_ -match '\.(txt|bin)$' })
-
     if ($files.Count -ne 3) {
         throw "Expected 3 archived files, got $($files.Count)."
     }
