@@ -11,7 +11,6 @@ param(
     [int]$MaxFiles = 3
 )
 
-
 $ErrorActionPreference = "Stop"
 
 if (-not (Test-Path -LiteralPath $Source -PathType Container)) {
